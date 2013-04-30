@@ -1,6 +1,6 @@
 <% unless @error %>
 <div class="row-fluid">
-  <%= erb :_dash_header %>
+    <%= erb :_dash_header, :locals => {:link => true} %>
 </div>
   
 <% span=12/@graph_columns %>
