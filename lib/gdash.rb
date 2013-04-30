@@ -7,9 +7,9 @@ require 'less'
 
 class GDash
   require 'gdash/dashboard'
-  require 'gdash/monkey_patches'
   require 'gdash/sinatra_app'
   require 'graphite_graph'
+  require 'gdash/monkey_patches'
 
   attr_reader :graphite_base, :graphite_render, :graph_templates, :category, :dash_templates, :height, :width, :from, :until
 
