@@ -144,6 +144,7 @@ class GDash
       end
 
       if main_graph = @dashboard.graph_by_name(params[:name], options)
+        @parent_graph = main_graph
         @graphs = @intervals.map do |e|
           new_props = {:from => e[0], :title => "#{main_graph[:graphite].properties[:title]} - #{e[1]}"}
           new_props = main_graph[:graphite].properties.merge new_props

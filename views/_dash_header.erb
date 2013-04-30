@@ -11,7 +11,11 @@
     </h1>
     <h2>
         <small>
+            <% if link %>
+            <%= @parent_graph[:graphite][:title] %>
+            <% else %>
             <%= @dashboard.description %>
+            <% end %>
         </small>
     </h2>
 </div>
